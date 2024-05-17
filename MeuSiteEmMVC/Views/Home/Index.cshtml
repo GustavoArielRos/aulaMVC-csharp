@@ -1,0 +1,10 @@
+﻿@model HomeModel //dessa forma eu consigo receber a modo a que a VIEW recebeu como parâmetro la no CONTROLER "View(home)"
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem vindo, @Model.Nome</h1><!-- vai receber a inf que ta no nome da model recebida -->
+    <p>Meu primeiro site em mvc</p>
+    <span>Seu e-mail é: @Model.Email</span><!-- vai receber a inf que ta no email da model recebida -->
+</div>
